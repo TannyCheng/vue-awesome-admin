@@ -1,0 +1,21 @@
+dist
+/public
+/bin
+.husky
+
+# docs or icon
+*.ttf
+*.woff
+*.md
+/docs
+
+# package
+node_modules
+package.json
+
+# editor config
+.vscode
+.idea
+
+# local
+.local

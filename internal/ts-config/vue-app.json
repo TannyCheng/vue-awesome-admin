@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "display": "Vue App",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"],
+    "noImplicitAny": false,
+  }
+}
