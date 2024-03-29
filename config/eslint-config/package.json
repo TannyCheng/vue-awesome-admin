@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json.schemastore.org/package",
+  "name": "@awesome/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "eslint config for vue-awesome-admin",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "pnpm eslint .",
+    "stub": "pnpm unbuild --stub "
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "vue-eslint-parser": "^9.4.2"
+  }
+}

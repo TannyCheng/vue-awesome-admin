@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@awesome/ts-config",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "node.json",
+    "vue-app.json"
+  ],
+  "dependencies": {
+    "@types/node": "^20.11.30"
+  }
+}

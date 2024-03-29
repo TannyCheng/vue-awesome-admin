@@ -5,13 +5,15 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
   proseWrap: 'always',
-  htmlWithWhitespaceSensitivity: 'strict',
+  htmlWhitespaceSensitivity: 'strict',
   endOfLine: 'auto',
   plugins: ['prettier-plugin-packagejson'],
-  overrides: [{
-    files: '.*rc',
-    options: {
-      parser: 'json',
-    }
-  }]
+  overrides: [
+    {
+      files: '.*rc',
+      options: {
+        parser: 'json',
+      },
+    },
+  ],
 }

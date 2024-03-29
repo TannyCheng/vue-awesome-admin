@@ -1,3 +1,21 @@
 node_modules
 dist
-*-lock.yaml
+pnpm-lock.yaml
+package-lock.json
+
+# local
+.eslintcache
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

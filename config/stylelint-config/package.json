@@ -1,0 +1,38 @@
+{
+  "name": "@awesome/stylelint-config",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf node_modules dist",
+    "lint": "pnpm eslint .",
+    "stub": "pnpm unbuild --stub"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-html": "^1.6.0",
+    "postcss-less": "^6.0.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.3.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-prettier": "^5.0.0"
+  }
+}
