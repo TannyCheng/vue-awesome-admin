@@ -38,12 +38,12 @@ function defineApplicationConfig(definedOptions: DefinedOptions = {}) {
         alias: [
           // @/xxx => src/xxx
           {
-            find: '/@//',
+            find: /@\//,
             replacement: pathResolve('src') + '/',
           },
           // #/xxx => types/xxx
           {
-            find: '/#//',
+            find: /#\//,
             replacement: pathResolve('types') + '/',
           },
         ],
@@ -73,7 +73,6 @@ function defineApplicationConfig(definedOptions: DefinedOptions = {}) {
       plugins,
     }
     const mergedConfig = mergeConfig(commonConfig(mode), applicationConfig)
-
     return mergeConfig(mergedConfig, overrides)
   })
 }
@@ -85,7 +84,7 @@ async function createDefinedData(root: string) {
 
     const __APP__INFO = {
       pkg: { name, version, dependencies, devDependencies },
-      lastBuildTime: format(new Date(), 'YYYY-MM-dd HH:mm:ss'),
+      lastBuildTime: format(new Date(), 'yyyy-MM-dd HH:mm:ss'),
     }
     return {
       __APP__INFO: JSON.stringify(__APP__INFO),
